@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+    --font-heading: "SN Pro", sans-serif;
+    --font-main: "DM Sans", sans-serif;
+    --color-sport-gray-100: #ebeef3;
+    --color-sport-gray-200: #e1e8f0;
+    --color-sport-gray-300: #b8c2ce;
+    --color-sport-gray-800: #262626;
+    --color-sport-white-100: #f9fafc;
+    /* --container-main: 1170px; */
+
+    --breakpoint-xs: 375px;
+    --breakpoint-sm: 576px;
+    --breakpoint-bm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-ml: 992px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+    --breakpoint-lgxl: 1780px;
+    --breakpoint-xxl: 20000px;
+}

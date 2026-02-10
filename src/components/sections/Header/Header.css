@@ -1,0 +1,70 @@
+@import "../../../styles/tailwind.css";
+@layer components {
+    header {
+        nav {
+            @apply flex;
+        }
+
+        ul.menu-list {
+            &.menu-desktop {
+                @apply xl:flex gap-5 hidden;
+            }
+
+            li {
+                @apply px-[10px] xl:py-0 py-3;
+                a {
+                    @apply text-[15px] font-normal leading-[2.8] opacity-60 text-sport-gray-800 tracking-[1%];
+                    &.active {
+                        @apply opacity-100;
+                    }
+                    &:hover {
+                        @apply opacity-100;
+                    }
+                }
+            }
+        }
+
+        .mobile-menu {
+            @apply absolute top-[-100vh] left-0 w-full h-full z-[-1] bg-white/80;
+            &.menu-active {
+                @apply z-[1] top-0;
+            }
+
+            nav {
+                @apply w-full h-full flex flex-col justify-center items-center;
+                ul {
+                    @apply w-full flex flex-col items-center justify-center;
+                }
+            }
+        }
+
+        /* BURGER */
+        .burger-line {
+            @apply block w-full h-[2px] bg-sport-gray-800 transition-all duration-300 ease-in-out;
+        }
+
+        button:not(.active) {
+            .top {
+                @apply translate-y-0 rotate-0;
+            }
+            .middle {
+                @apply opacity-100;
+            }
+            .bottom {
+                @apply translate-y-0 rotate-0;
+            }
+        }
+
+        button.active {
+            .top {
+                @apply translate-y-[10px] rotate-45;
+            }
+            .middle {
+                @apply opacity-0;
+            }
+            .bottom {
+                @apply -translate-y-[12px] -rotate-45;
+            }
+        }
+    }
+}
