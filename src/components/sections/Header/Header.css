@@ -25,7 +25,7 @@
         }
 
         .mobile-menu {
-            @apply absolute top-[-100vh] left-0 w-full h-full z-[-1] bg-white/80;
+            @apply absolute top-[-100vh] left-0 w-full h-full z-[-1] bg-white/95 z-10;
             &.menu-active {
                 @apply z-[1] top-0;
             }
