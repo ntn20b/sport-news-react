@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./styles/tailwind.css";
 import "./index.css";
 
@@ -9,11 +9,11 @@ import SingleNews from "./pages/SingleNews";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/news/:slug" element={<SingleNews />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </StrictMode>,
 );
