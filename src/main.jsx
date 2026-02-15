@@ -6,6 +6,7 @@ import "./index.css";
 
 import Home from "./pages/Home";
 import SingleNews from "./pages/SingleNews";
+import BlogCategory from "./pages/BlogCategory";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/news/:slug" element={<SingleNews />} />
+                <Route path="/category/:slug" element={<BlogCategory />} />
             </Routes>
         </HashRouter>
     </StrictMode>,
