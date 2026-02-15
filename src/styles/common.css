@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@layer base {
+    h2,
+    .h2 {
+        @apply font-heading font-medium lg:text-[28px] text-[22px] leading-[1.35] text-sport-gray-800;
+    }
+}
