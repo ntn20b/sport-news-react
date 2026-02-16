@@ -52,8 +52,6 @@ function Hero() {
                     </div>
                 </div>
             </div>
-
-            {/* <img src={basketbollPlayer} alt="#" className="" /> */}
         </section>
     );
 }
