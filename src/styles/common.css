@@ -4,4 +4,15 @@
     .h2 {
         @apply font-heading font-medium lg:text-[28px] text-[22px] leading-[1.35] text-sport-gray-800;
     }
+    h3,
+    .h3 {
+        @apply font-heading font-medium lg:text-[18px] text-[16px] leading-[1.4];
+    }
+
+    .label {
+        @apply rounded-[3px] flex justify-center items-center border-[1px] border-sport-gray-100 text-sport-gray-100;
+    }
+    .label-lg {
+        @apply md:text-[20px] text-[16px] font-medium text-sport-gray-100;
+    }
 }
