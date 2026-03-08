@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function TrandingNewsCard({ trand, index }) {
     return (
         <Link to={`/news/${trand.slug}`}>
-            <div className="flex gap-5 items-stretch">
+            <div className="flex gap-5 items-stretch hover:opacity-80 transition">
                 <img src={trand.image} alt="" className="max-w-[43%] w-full rounded-[6px] object-cover" />
 
                 <div className={`md:max-w-[280px] w-full flex ${index === 0 ? "" : "border-t border-sport-gray-400"}`}>

@@ -31,7 +31,7 @@ const tranding = [
 ];
 function TrandingSection() {
     return (
-        <section className="mt-20">
+        <section className="md:mt-20 mt-15">
             <div className="w-full mx-auto max-w-[1170px] xl:pl-9 xl:pr-0 px-4 flex md:flex-row flex-col-reverse items-stretch bg-sport-gray-100 rounded-[6px]">
                 <div className="md:max-w-[48.7%] p-9 pr-0 pt-7 pl-0">
                     <h2 className="h2 mb-4">Trending News</h2>
@@ -48,7 +48,7 @@ function TrandingSection() {
                     <p className="label label-lg max-w-[107px] w-full h-[36px]">Cycling</p>
                     <div>
                         <p className="text-[18px] text-white">Debits - 03 June 2023</p>
-                        <h3 className="font-heading font-bold md:text-[36px] text-[28px] text-white leading-[1.2] mt-[14px]">DISCOVER THE MEMBER BENEFITS OF USA CYCLING!</h3>
+                        <h3 className="font-heading font-bold md:text-[36px] text-[28px] text-white leading-[1.2] mt-[14px] uppercase">DISCOVER THE MEMBER BENEFITS OF USA CYCLING!</h3>
                     </div>
                 </Link>
             </div>
