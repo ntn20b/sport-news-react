@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SliderCard from "../../SliderCard/SliderCard";
@@ -9,12 +10,12 @@ import "swiper/css/pagination";
 import sliderBg from "../../../assets/sliderbg.webp";
 
 const slides = [
-    { id: 1, category: "Football", date: "04 June 2023", title: "Lionel Messi Leaving PSG", description: "Top scorer in EuroLeague Finals.", image: sliderBg },
-    { id: 2, category: "Basketball", date: "05 June 2023", title: "NBA Finals Game 7 Ends Dramatic", description: "Historic performance in NBA finals.", image: sliderBg },
-    { id: 3, category: "Tennis", date: "06 June 2023", title: "Djokovic Wins Another Grand Slam", description: "The Serbian star continues dominance.", image: sliderBg },
-    { id: 4, category: "Tennis", date: "06 June 2023", title: "Djokovic Wins Another Grand Slam", description: "The Serbian star continues dominance.", image: sliderBg },
-    { id: 5, category: "Tennis", date: "06 June 2023", title: "Djokovic Wins Another Grand Slam", description: "The Serbian star continues dominance.", image: sliderBg },
-    { id: 6, category: "Tennis", date: "06 June 2023", title: "Djokovic Wins Another Grand Slam", description: "The Serbian star continues dominance.", image: sliderBg },
+    { id: 1, slug: "lionel-messi-psg", category: "Football", date: "04 June 2023", title: "Lionel Messi Leaving PSG", description: "Top scorer in EuroLeague Finals.", image: sliderBg },
+    { id: 2, slug: "nba-finals-game7", category: "Basketball", date: "05 June 2023", title: "NBA Finals Game 7 Ends Dramatic", description: "Historic performance in NBA finals.", image: sliderBg },
+    { id: 3, slug: "djokovic-grand-slam", category: "Tennis", date: "06 June 2023", title: "Djokovic Wins Another Grand Slam", description: "The Serbian star continues dominance.", image: sliderBg },
+    { id: 4, slug: "djokovic-grand-slam", category: "Tennis", date: "06 June 2023", title: "Djokovic Wins Another Grand Slam", description: "The Serbian star continues dominance.", image: sliderBg },
+    { id: 5, slug: "djokovic-grand-slam", category: "Tennis", date: "06 June 2023", title: "Djokovic Wins Another Grand Slam", description: "The Serbian star continues dominance.", image: sliderBg },
+    { id: 6, slug: "djokovic-grand-slam", category: "Tennis", date: "06 June 2023", title: "Djokovic Wins Another Grand Slam", description: "The Serbian star continues dominance.", image: sliderBg },
 ];
 
 function SliderSection() {
@@ -34,7 +35,9 @@ function SliderSection() {
                 <Swiper slidesPerView={1} spaceBetween={50} onSwiper={(swiper) => (swiperRef.current = swiper)} onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}>
                     {slides.map((slide) => (
                         <SwiperSlide key={slide.id}>
-                            <SliderCard {...slide} />
+                            <Link to={`/news/${slide.slug}`}>
+                                <SliderCard {...slide} />
+                            </Link>
                         </SwiperSlide>
                     ))}
                 </Swiper>
