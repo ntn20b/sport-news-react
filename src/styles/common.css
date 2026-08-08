@@ -8,6 +8,9 @@
     .h3 {
         @apply font-heading font-medium lg:text-[18px] text-[16px] leading-[1.4];
     }
+    .h5 {
+        @apply text-[16px] font-heading leading-5;
+    }
 
     .label {
         @apply rounded-[3px] flex justify-center items-center border-[1px] border-sport-gray-100 text-sport-gray-100;
