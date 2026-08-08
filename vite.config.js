@@ -5,4 +5,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
     plugins: [react(), tailwindcss()],
     base: "/sport-news-react/",
+    server: {
+        proxy: {
+            "/api": {
+                target: "https://api.football-data.org",
+                changeOrigin: true,
+                rewrite: (path) => path.replace(/^\/api/, ""),
+            },
+        },
+    },
 });
