@@ -4,15 +4,12 @@ import nav from "../../../assets/nav.svg";
 import "./Header.css";
 
 function Header() {
-    // Creating a state for opening the menu
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // Switch function (analogous to burgerButton listener)
     const toggleMenu = () => {
         setIsMenuOpen((prev) => !prev);
     };
 
-    // Effect for blocking scrolling (analogous to toggleBodyLock)
     useEffect(() => {
         if (isMenuOpen) {
             document.documentElement.classList.add("menu-open");
@@ -38,19 +35,16 @@ function Header() {
                             </a>
                         </li>
                         <li className="menu-item">
-                            <a href="#">Category</a>
+                            <a href="#category">Category</a>
                         </li>
                         <li className="menu-item">
-                            <a href="#">Trending News</a>
+                            <a href="#trending-news">Trending News</a>
                         </li>
                         <li className="menu-item">
-                            <a href="#">Recent News</a>
+                            <a href="#info-section">Recent News</a>
                         </li>
                         <li className="menu-item">
-                            <a href="#">Clubs Ranking</a>
-                        </li>
-                        <li className="menu-item">
-                            <a href="#">Sports Article</a>
+                            <a href="#info-section">Clubs Ranking</a>
                         </li>
                     </ul>
                 </nav>
@@ -64,19 +58,16 @@ function Header() {
                                 </a>
                             </li>
                             <li className="menu-item">
-                                <a href="#">Category</a>
+                                <a href="#category">Category</a>
                             </li>
                             <li className="menu-item">
-                                <a href="#">Trending News</a>
+                                <a href="#trending-news">Trending News</a>
                             </li>
                             <li className="menu-item">
-                                <a href="#">Recent News</a>
+                                <a href="#info-section">Recent News</a>
                             </li>
                             <li className="menu-item">
-                                <a href="#">Clubs Ranking</a>
-                            </li>
-                            <li className="menu-item">
-                                <a href="#">Sports Article</a>
+                                <a href="#info-section">Clubs Ranking</a>
                             </li>
                         </ul>
 

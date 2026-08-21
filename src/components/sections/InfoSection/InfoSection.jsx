@@ -17,7 +17,7 @@ function InfoSection() {
     });
 
     return (
-        <section className="md:mt-20 mt-15">
+        <section className="md:mt-20 mt-8" id="info-section">
             <div className="w-full max-w-[1170px] mx-auto xl:px-0 px-4 flex justify-between md:flex-row flex-col-reverse gap-[30px]">
                 <div className="md:max-w-[40%] w-full">
                     <h2 className="h2 mb-4">Recent News</h2>

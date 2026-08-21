@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/tailwind.css";
 import "./index.css";
 
@@ -17,13 +17,13 @@ createRoot(document.getElementById("root")).render(
     <StrictMode>
         {/* START QUERY */}
         <QueryClientProvider client={queryClient}>
-            <HashRouter>
+            <BrowserRouter basename="/sport-news-react">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/news/:slug" element={<SingleNews />} />
                     <Route path="/category/:slug" element={<BlogCategory />} />
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </QueryClientProvider>
         {/* END QUERY */}
     </StrictMode>,
