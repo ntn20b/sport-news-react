@@ -39,7 +39,7 @@ function Category() {
     ];
 
     return (
-        <section>
+        <section id="category">
             <div className="w-full mx-auto max-w-[1170px] xl:px-0 px-4 xl:pt-[120px] pt-[50px]">
                 <h2 className="h2">Category</h2>
                 <div className="grid md:grid-cols-4 grid-cols-2 lg:gap-[30px] gap-5 overflow-hidden pt-4">

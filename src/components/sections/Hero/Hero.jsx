@@ -24,7 +24,7 @@ function Hero() {
         },
     ];
     return (
-        <section className="relative">
+        <section className="relative" id="hero">
             <div className="w-full mx-auto max-w-[1170px] flex md:flex-row flex-col justify-between lg:gap-4 gap-8 w-full lg:pt-[111px] pt-[20px] xl:px-0 px-4 relative z-[2]">
                 <img src={heroBg} alt="#" className="absolute max-w-[1080px] w-full top-0 left-[-200px] lg:block hidden" />
                 <div className="md:max-w-[65.3%] w-full flex flex-col lg:items-end md:-mb-10 lg:gap-4 gap-10">

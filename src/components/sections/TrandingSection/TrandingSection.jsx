@@ -31,7 +31,7 @@ const tranding = [
 ];
 function TrandingSection() {
     return (
-        <section className="md:mt-20 mt-15">
+        <section className="md:mt-20 mt-15" id="trending-news">
             <div className="w-full mx-auto max-w-[1170px] xl:pl-9 xl:pr-0 px-4 flex md:flex-row flex-col-reverse items-stretch bg-sport-gray-100 rounded-[6px]">
                 <div className="md:max-w-[48.7%] p-9 pr-0 pt-7 pl-0">
                     <h2 className="h2 mb-4">Trending News</h2>
